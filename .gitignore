@@ -1,5 +1,8 @@
-# Python / venv
+# Python virtual environment
 .venv/
+Lib/
+Scripts/
+pyvenv.cfg
 __pycache__/
 
 # Robot Framework reports
