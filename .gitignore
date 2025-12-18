@@ -1,0 +1,13 @@
+# Python / venv
+.venv/
+__pycache__/
+
+# Robot Framework reports
+reports/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
