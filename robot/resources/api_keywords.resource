@@ -20,3 +20,7 @@ GET
     [Arguments]    ${path}
     ${resp}=    GET On Session    ${SESSION}    ${path}
     RETURN    ${resp}
+PATCH API
+    [Arguments]    ${path}    ${payload}
+    ${resp}=    Patch On Session    ${SESSION}    ${path}    json=${payload}
+    RETURN    ${resp}

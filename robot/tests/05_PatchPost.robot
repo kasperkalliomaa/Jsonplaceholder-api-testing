@@ -9,7 +9,7 @@ Test Case 05 - Päivitetään postauksen otsikko Patchilla
 
     ${payload}=    Create Dictionary    title=Osittain päivitetty otsikko
 
-    ${resp}=    PATCH    /posts/${post_id}    ${payload}
+    ${resp}=    PATCH API    /posts/${post_id}    ${payload}
     Status Should Be    ${resp}    200
 
     Log    Postauksen otsikko päivitetty onnistuneesti Patchilla. Vastaus: ${resp.text}
